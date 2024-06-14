@@ -1,9 +1,11 @@
-import React from 'react'
+import Login from "./components/Login";
 
 const App = () => {
   return (
-    <div className='text-2xl text-red-700'>App</div>
-  )
-}
+    <>
+      <Login />
+    </>
+  );
+};
 
-export default App
+export default App;
