@@ -1,9 +1,12 @@
+import { useState } from "react";
 import Login from "./components/Login";
 
 const App = () => {
+  const [id, setId] = useState<string | undefined>();
   return (
     <>
-      <Login />
+      {id}
+      <Login onIdSubmit={setId} />
     </>
   );
 };
