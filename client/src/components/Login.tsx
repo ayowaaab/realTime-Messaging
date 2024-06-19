@@ -30,8 +30,9 @@ const Login = ({ onIdSubmit }: Props) => {
           type="text"
         />
         <div className="flex gap-3 w-1/2">
-          <button className="btn btn-primary mt-3">LogIn</button>
+          <button type="submit" className="btn btn-primary mt-3">LogIn</button>
           <button
+            type="button"
             onClick={createNewId}
             className="btn btn-secondary whitespace-nowrap  mt-3"
           >
