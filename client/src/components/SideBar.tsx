@@ -23,17 +23,17 @@ const SideBar = ({id}:{id:string}) => {
           <CardHeader>
             <CardTitle>Account</CardTitle>
             <CardDescription>
-              Make changes to your account here. Click save when you're done.
+              Your ID : {id}
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-2">
             <div className="space-y-1">
               <Label htmlFor="name">Name</Label>
-              <Input id="name" defaultValue="Pedro Duarte" />
+              <Input id="name"  />
             </div>
             <div className="space-y-1">
               <Label htmlFor="username">Username</Label>
-              <Input id="username" defaultValue="@peduarte" />
+              <Input id="username"  />
             </div>
           </CardContent>
           <CardFooter>
@@ -41,6 +41,7 @@ const SideBar = ({id}:{id:string}) => {
           </CardFooter>
         </Card>
       </TabsContent>
+
       <TabsContent value="password">
         <Card>
           <CardHeader>
