@@ -12,6 +12,7 @@ const useLocalStorage = (key: string, initialValue?: string | Function) => {
   });
 
   useEffect(() => {
+    value === undefined ? setValue("") : value;
     localStorage.setItem(prefixKey, JSON.stringify(value));
   }, [value, prefixKey]);
 
